@@ -83,7 +83,7 @@ namespace Level3
 
             // 入力値をプロパティにセット
             list.Column1 = dateTimePickerDeadline.Text;
-            list.Column2 = textToDo.Text;
+            list.Column2 = textToDo.Text.Replace(",", "，");
 
             // ToDoをリストに追加
             list.Add();
